@@ -1,6 +1,6 @@
 # get_osm.R
 
-**Description**: This script extracts OpenStreetMap data as a simple feature object in R using the Overpass API and the osmtogeojson utility.
+**Description**: This script extracts [OpenStreetMap](https://www.openstreetmap.org) data as a simple feature object in R using the [Overpass](https://overpass-turbo.eu) API and the [osmtogeojson](https://tyrasd.github.io/osmtogeojson) utility. 
 
 **Author**: Clement Gorin, gorinclem@gmail.com
 
@@ -15,14 +15,14 @@ npm install -g osmtogeojson
 
 ## Usage
 
-This example extracts amenities in Lyon.
+The script should be executed interactively. The queries are written in the [Overpass Query Language](https://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL). This example extracts amenities cafes, bars and restaurants in Lyon, France.
 
 ```r
 #!/usr/bin/env Rscript
 
 # Extracts OSM data
 check_status()
-query    <- "[timeout:300];area[admin_level=8][name=Lyon]->.a;nwr[amenity~\'cafe|bar|restaurant\'](area.a);out center;"
+query    <- "[timeout:60];area[admin_level=8][name=Lyon]->.a;nwr[amenity~\'^cafe$|^bar$|^restaurant$\'](area.a);out center;"
 response <- get_osm(query)
 response <- select(response, id, amenity, name)
 
