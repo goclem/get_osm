@@ -33,16 +33,3 @@ get_osm <- function(query, server="http://www.overpass-api.de/api/interpreter") 
   tictoc::toc()
   return(response)
 }
-
-# Examples ----------------------------------------------------------------
-
-# Extracts OSM data
-check_status()
-query    <- "[timeout:300];area[admin_level=8][name=Lyon]->.a;nwr[amenity~\'cafe|bar|restaurant\'](area.a);out center;"
-response <- get_osm(query)
-response <- select(response, id, amenity, name)
-
-# Check
-tmap_mode("view")
-tm_shape(response) +
-  tm_dots("amenity") 
