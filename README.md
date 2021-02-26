@@ -32,4 +32,4 @@ tm_shape(response) +
   tm_dots("amenity") 
 ```
 
-![Image of Yaktocat](example.jpeg){ width=50% }
+![Image of Yaktocat](example.jpeg){width=50%}
