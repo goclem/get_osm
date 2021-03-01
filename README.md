@@ -2,11 +2,11 @@
 
 Clement Gorin, gorinclem@gmail.com
 
-This script extracts [OpenStreetMap](https://www.openstreetmap.org) data as a simple feature object in R using the [Overpass](https://overpass-turbo.eu) API. 
+The script `get_osm.R` contains functions to extract [OpenStreetMap](https://www.openstreetmap.org) data as a simple feature object in R using the [Overpass](https://overpass-turbo.eu) API. 
 
 ## Prerequisites
 
-The script requires the [osmtogeojson](https://tyrasd.github.io/osmtogeojson) utility.
+The script requires the [osmtogeojson](https://tyrasd.github.io/osmtogeojson) command-line utility.
 
 ```bash
 #!/usr/bin/env bash
