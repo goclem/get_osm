@@ -35,7 +35,7 @@ tm_shape(response) +
   tm_dots("amenity") 
 ```
 
-![Amenities in Lyon](example.jpeg){:height=200px width=500px}
+<img src="example.jpeg" width="100" height="100">
 
 ## Resources
 
