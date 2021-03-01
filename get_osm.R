@@ -4,13 +4,15 @@
 # Contact: gorinclem@gmail.com
 # Date: February 2021
 
+# Packages
+if(!require("pacman")) install.packages("pacman", repos = "https://cloud.r-project.org/")
 pacman::p_load(curl, dplyr, geojsonsf, RCurl, sf, stringr, stringi, tictoc, tmap)
 
 # Functions ---------------------------------------------------------------
 
 # Checks API status
 check_status <- function(server = "http://overpass-api.de/api/status") {
-  cat('osmtogeojson', system("osmtogeojson --version"), '\n\n')
+  cat("osmtogeojson", system("osmtogeojson --version"), "\n\n")
   cat(RCurl::getURL(server))    
 }
 
