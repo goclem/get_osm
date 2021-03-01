@@ -17,7 +17,7 @@ npm install -g osmtogeojson
 
 ## Usage
 
-This example extracts amenities cafes, bars and restaurants in Lyon, France. The queries are written in the [Overpass Query Language](https://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL). Make sure to respect the OpenStreetMap [terms of use](https://wiki.osmfoundation.org/wiki/Terms_of_Use).
+This example extracts amenities cafes, bars and restaurants in Lyon, France. The queries are written in the [Overpass Query Language](https://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL).
 
 ```r
 #!/usr/bin/env Rscript
@@ -38,3 +38,5 @@ tm_shape(response) +
 ```
 
 <img src="example.jpeg" width="500" height="500">
+
+Make sure to respect the OpenStreetMap [terms of use](https://wiki.osmfoundation.org/wiki/Terms_of_Use).
