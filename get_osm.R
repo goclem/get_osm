@@ -11,7 +11,7 @@ pacman::p_load(curl, dplyr, geojsonsf, RCurl, sf, stringr, stringi, tictoc, tmap
 # Functions ---------------------------------------------------------------
 
 # Checks API status
-check_status <- function(server = "http://overpass-api.de/api/status") {
+check_requirements <- function(server = "http://overpass-api.de/api/status") {
   cat("osmtogeojson", system("osmtogeojson --version"), "\n\n")
   cat(RCurl::getURL(server))    
 }
