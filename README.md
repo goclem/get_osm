@@ -20,6 +20,9 @@ The script should be executed interactively. The queries are written in the [Ove
 ```r
 #!/usr/bin/env Rscript
 
+# Sources get_oms.R
+source("https://raw.githubusercontent.com/goclem/get_osm/main/get_osm.R")
+
 # Extracts OSM data
 check_status()
 query    <- "[timeout:60];area[admin_level=8][name=Lyon]->.a;nwr[amenity~\'^cafe$|^bar$|^restaurant$\'](area.a);out center;"
