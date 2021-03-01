@@ -35,7 +35,7 @@ tm_shape(response) +
   tm_dots("amenity") 
 ```
 
-<img src="example.jpeg" width="100" height="100">
+<img src="example.jpeg" width="500" height="500">
 
 ## Resources
 
