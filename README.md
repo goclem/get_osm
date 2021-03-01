@@ -1,10 +1,12 @@
-# get_osm.R
+# Get OSM
 
-**Description**: This script extracts [OpenStreetMap](https://www.openstreetmap.org) data as a simple feature object in R using the [Overpass](https://overpass-turbo.eu) API and the [osmtogeojson](https://tyrasd.github.io/osmtogeojson) utility. 
+**Description**: This script extracts [OpenStreetMap](https://www.openstreetmap.org) data as a simple feature object in R using the [Overpass](https://overpass-turbo.eu) API. 
 
 **Author**: Clement Gorin, gorinclem@gmail.com
 
-## Requirements
+## Prerequisites
+
+The script requires the [osmtogeojson](https://tyrasd.github.io/osmtogeojson) utility.
 
 ```bash
 #!/usr/bin/env bash
@@ -15,7 +17,7 @@ npm install -g osmtogeojson
 
 ## Usage
 
-The script should be executed interactively. The queries are written in the [Overpass Query Language](https://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL). This example extracts amenities cafes, bars and restaurants in Lyon, France.
+This example extracts amenities cafes, bars and restaurants in Lyon, France. The queries are written in the [Overpass Query Language](https://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL).
 
 ```r
 #!/usr/bin/env Rscript
@@ -37,6 +39,13 @@ tm_shape(response) +
 
 <img src="example.jpeg" width="500" height="500">
 
-## Resources
+## Links
 
-- OpenStreetMap [terms of use](https://wiki.osmfoundation.org/wiki/Terms_of_Use)
+- [OpenStreetMap terms of use](https://wiki.osmfoundation.org/wiki/Terms_of_Use)
+- [Overpass](https://overpass-turbo.eu)
+- [Overpass Query Language](https://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL)
+- [osmtogeojson](https://tyrasd.github.io/osmtogeojson)
+
+## License
+
+Distributed under the MIT License. See LICENSE for more information.
