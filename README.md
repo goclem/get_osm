@@ -1,8 +1,8 @@
 # Extract OpenStreetMap data
 
-**Description**: This script extracts [OpenStreetMap](https://www.openstreetmap.org) data as a simple feature object in R using the [Overpass](https://overpass-turbo.eu) API. 
+Clement Gorin, gorinclem@gmail.com
 
-**Author**: Clement Gorin, gorinclem@gmail.com
+This script extracts [OpenStreetMap](https://www.openstreetmap.org) data as a simple feature object in R using the [Overpass](https://overpass-turbo.eu) API. 
 
 ## Prerequisites
 
