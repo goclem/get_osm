@@ -29,12 +29,12 @@ source("https://raw.githubusercontent.com/goclem/get_osm/main/get_osm.R")
 check_requirements()
 query    <- "[timeout:60];area[admin_level=8][name=Lyon]->.a;nwr[amenity~\'^cafe$|^bar$|^restaurant$\'](area.a);out center;"
 response <- get_osm(query)
-response <- select(response, id, amenity, name)
+response <- subset(response, select = c(id, amenity, name))
 
-# Check
+# Plots extracted data
 tmap_mode("view")
 tm_shape(response) +
-  tm_dots("amenity") 
+  tm_dots("amenity")
 ```
 
 <img src="example.jpeg" width="500" height="500">
