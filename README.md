@@ -1,8 +1,8 @@
-# Get OSM
+# Extract OpenStreetMap data
 
 **Description**: This script extracts [OpenStreetMap](https://www.openstreetmap.org) data as a simple feature object in R using the [Overpass](https://overpass-turbo.eu) API. 
 
-**Author**: Clement Gorin, gorinclem@gmail.com
+Clement Gorin, gorinclem@gmail.com
 
 ## Prerequisites
 
@@ -17,7 +17,7 @@ npm install -g osmtogeojson
 
 ## Usage
 
-This example extracts amenities cafes, bars and restaurants in Lyon, France. The queries are written in the [Overpass Query Language](https://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL).
+This example extracts amenities cafes, bars and restaurants in Lyon, France. The queries are written in the [Overpass Query Language](https://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL). Make sure to respect the OpenStreetMap [terms of use](https://wiki.osmfoundation.org/wiki/Terms_of_Use).
 
 ```r
 #!/usr/bin/env Rscript
@@ -38,14 +38,3 @@ tm_shape(response) +
 ```
 
 <img src="example.jpeg" width="500" height="500">
-
-## Links
-
-- [OpenStreetMap terms of use](https://wiki.osmfoundation.org/wiki/Terms_of_Use)
-- [Overpass](https://overpass-turbo.eu)
-- [Overpass Query Language](https://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL)
-- [osmtogeojson](https://tyrasd.github.io/osmtogeojson)
-
-## License
-
-Distributed under the MIT License. See LICENSE for more information.
