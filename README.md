@@ -20,7 +20,7 @@ The script should be executed interactively. The queries are written in the [Ove
 ```r
 #!/usr/bin/env Rscript
 
-# Sources get_oms.R
+# Sources get_osm.R
 source("https://raw.githubusercontent.com/goclem/get_osm/main/get_osm.R")
 
 # Extracts OSM data
