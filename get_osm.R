@@ -6,7 +6,7 @@
 
 # Packages
 if(!require("pacman")) install.packages("pacman", repos = "https://cloud.r-project.org/")
-pacman::p_load(curl, dplyr, geojsonsf, RCurl, sf, stringr, stringi, tictoc, tmap)
+pacman::p_load(curl, geojsonsf, RCurl, sf, tictoc, tmap)
 
 # Functions ---------------------------------------------------------------
 
