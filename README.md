@@ -35,4 +35,8 @@ tm_shape(response) +
   tm_dots("amenity") 
 ```
 
-![Amenities in Lyon](example.jpeg)
+![Amenities in Lyon](example.jpeg =250x250)
+
+## Resources
+
+- OpenStreetMap [terms of use](https://wiki.osmfoundation.org/wiki/Terms_of_Use)
