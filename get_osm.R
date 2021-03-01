@@ -4,10 +4,6 @@
 # Contact: gorinclem@gmail.com
 # Date: February 2021
 
-# Requirements:
-# sudo apt install npm
-# npm install -g osmtogeojson
-
 pacman::p_load(curl, dplyr, geojsonsf, RCurl, sf, stringr, stringi, tictoc, tmap)
 
 # Functions ---------------------------------------------------------------
