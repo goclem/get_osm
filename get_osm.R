@@ -17,7 +17,7 @@ check_requirements <- function(server = "http://overpass-api.de/api/status") {
 }
 
 # Extracts OSM data
-get_osm <- function(query, server="http://www.overpass-api.de/api/interpreter") {
+get_osm <- function(query, server = "http://www.overpass-api.de/api/interpreter") {
   cat("Query:\n", query, "\n")
   tictoc::tic("Runtime")  
   query <- paste0(server, "?data=", URLencode(query))
