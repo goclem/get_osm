@@ -27,7 +27,7 @@ source("https://raw.githubusercontent.com/goclem/get_osm/main/get_osm.R")
 
 # Extracts OSM data
 check_requirements()
-query    <- "[timeout:60];area[admin_level=8][name=Lyon]->.a;nwr[amenity~\'^cafe$|^bar$|^restaurant$\'](area.a);out center;"
+query    <- "area[admin_level=8][name=Lyon]->.a;nwr[amenity~\'^(cafe|bar|restaurant)$\'](area.a);out center;"
 response <- get_osm(query)
 response <- subset(response, select = c(id, amenity, name))
 
